@@ -12,7 +12,9 @@ export default function SideDrawer(props) {
       mountOnEnter
       unmountOnExit
     >
-      <aside className="side-drawer">{props.children}</aside>
+      <aside onClick={props.onClick} className="side-drawer">
+        {props.children}
+      </aside>
     </CSSTransition>
   );
   return ReactDOM.createPortal(content, document.getElementById("drawer-hook"));
