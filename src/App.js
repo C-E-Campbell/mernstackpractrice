@@ -1,7 +1,12 @@
-import React from 'react';
-
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Users from "./user/pages/Users";
 function App() {
-  return <h1>Let's start!</h1>;
+  return (
+    <Router>
+      <Route component={Users} path={"/users"} />
+    </Router>
+  );
 }
 
 export default App;
