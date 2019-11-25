@@ -1,7 +1,7 @@
 import React from "react";
 import "./PlaceItem.css";
 import Card from "../../shared/components/UIElements/Card";
-export default function PlaceItem() {
+export default function PlaceItem(props) {
   return (
     <li className="place-item">
       <Card className="place-item__content">
@@ -13,7 +13,7 @@ export default function PlaceItem() {
           <h3>{props.address}</h3>
           <p>{props.description}</p>
         </div>
-        <div className="palce-item__actions">
+        <div className="place-item__actions">
           <button>VIEW ON MAP</button>
           <button>EDIT</button>
           <button>DELETE</button>
