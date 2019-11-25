@@ -9,8 +9,14 @@ export default function NavLinks(props) {
         <NavLink to="/" exact>
           ALL USERS
         </NavLink>
+      </li>
+      <li>
         <NavLink to="/u1/places">MY PLACES</NavLink>
-        <NavLink to="/places/new">ADD PLAYERS</NavLink>
+      </li>
+      <li>
+        <NavLink to="/places/new">ADD PLACES</NavLink>
+      </li>
+      <li>
         <NavLink to="/auth">LOGIN</NavLink>
       </li>
     </ul>
