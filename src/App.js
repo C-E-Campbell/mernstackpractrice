@@ -12,11 +12,13 @@ function App() {
   return (
     <Router>
       <MainNavigation />
-      <Switch>
-        <Route path="/" exact component={Users} />
-        <Route path="/places/new" exact component={Places} />
-        <Redirect to="/" />
-      </Switch>
+      <main>
+        <Switch>
+          <Route path="/" exact component={Users} />
+          <Route path="/places/new" exact component={Places} />
+          <Redirect to="/" />
+        </Switch>
+      </main>
     </Router>
   );
 }
